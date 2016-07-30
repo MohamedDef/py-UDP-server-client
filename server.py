@@ -8,7 +8,7 @@ print("server is listening {}".format(s.getsockname()))
 
 while True:
     data,addr=s.recvfrom(1024)
-    print('Got connection from', addr)
+    print('connection from', addr)
     data=data.decode("ascii")
     print("Receved data: ",data)
     send_data="Thanks for your connection."
