@@ -1,7 +1,7 @@
 import socket
 
 s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-ip="192.168.1.2"
+ip="127.0.0.1"
 port=4000
 s.bind((ip,port))
 print("server is listening {}".format(s.getsockname()))
